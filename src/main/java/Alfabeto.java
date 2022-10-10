@@ -39,12 +39,12 @@ public class Alfabeto extends Pictograma {
     public String toString(){
         String let = "";
         int can = 0;
-        int j;
-        for (j=0;j<letras.length;j++){
+        int i;
+        for (i=0;i<letras.length;i++){
             can+=1;
             if (can==letras.length){    
-                let+=letras[j];
-            }else{let+=letras[j]+", ";}
+                let+=letras[i];
+            }else{let+=letras[i]+", ";}
         }
         return let;
     }

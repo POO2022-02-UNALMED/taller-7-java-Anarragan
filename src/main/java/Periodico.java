@@ -41,12 +41,14 @@ public class Periodico extends Escrito{
 		return super.getPaginas()*palabrasPagina*10;
 	}
 	
+	public String interpretacion() {
+		return this.interpretacion;
+	}
+	
 	public String toString() {
 		return this.getOrigen() + "\n" + this.getTitulo() + "\n" + this.getAutor() + "\n" + this.getPaginas() + "\n" + this.fecha + "\n" + this.primicia;
 	}
 	
-	public String interpretacion() {
-		return this.interpretacion;
-	}
+	
 
 }

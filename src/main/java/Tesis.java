@@ -57,12 +57,12 @@ public class Tesis extends Escrito{
 		return super.getPaginas()*palabrasPagina*5;
 	}
 	
-	public String toString() {
-		return this.getOrigen() + "\n" + this.getTitulo() + "\n" + this.getAutor() + "\n" + this.getPaginas() + "\n" + this.idea + "\n" + this.argumentos.length + "\n" + this.conclusion + "\n" + this.referencias;
-	}
-	
 	public String interpretacion() {
 		return this.interpretacion;
+	}
+	
+	public String toString() {
+		return this.getOrigen() + "\n" + this.getTitulo() + "\n" + this.getAutor() + "\n" + this.getPaginas() + "\n" + this.idea + "\n" + this.argumentos.length + "\n" + this.conclusion + "\n" + this.referencias;
 	}
 	
 }
