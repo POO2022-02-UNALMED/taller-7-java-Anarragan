@@ -12,6 +12,8 @@ public abstract class Escrito extends Pictograma{
 		this.paginas = paginas;
 	}
 	
+//Getters and setters
+	
 	public String getTitulo() {
 		return titulo;
 	}
@@ -31,12 +33,14 @@ public abstract class Escrito extends Pictograma{
 		this.paginas = paginas;
 	}
 	
+//Methods
+	
 	public String resumen() {
-		String r = this.getOrigen() + "\n";
-		r += this.titulo + "\n";
-		r += this.autor + "\n";
-		r += this.paginas;
-		return  r;
+		String res = this.getOrigen() + "\n";
+		res += this.titulo + "\n";
+		res += this.autor + "\n";
+		res += this.paginas;
+		return  res;
 	}
 	
 	abstract int palabrasTotales(int palabrasPagina);
